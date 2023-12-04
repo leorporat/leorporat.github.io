@@ -1,0 +1,56 @@
+.sidebar_container {
+  margin-left: 12vw;
+  margin-top: 10px;
+  height: 100%;
+  width: 200px;
+  color: #6DB9FF;
+  display: inline-block;
+}
+
+#personal_photo {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-left: auto;
+  height: auto;
+}
+
+#name {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 38px;
+  margin-bottom: 2%;
+}
+
+#icon_holder {
+  margin-top: 3%;
+  margin-left: 30%;
+  display:flex;
+  justify-content: space-between;
+}
+
+.link_icon {
+  transform: scale(0.5);
+}
+
+.link_word {
+  margin-top: 12%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.home-container {
+  display: inline-block;
+  margin-top: 10px;
+  vertical-align: top;
+  margin-left: 5vw;
+  width: 45vw;
+}
+
+#bio-hi {
+  margin: 0;
+  padding: 0;
+}
