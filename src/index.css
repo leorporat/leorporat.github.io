@@ -32,6 +32,6 @@ body {
   min-width: 500px;
   min-height: 100vh;
   overflow: hidden;
-  background-image: url('./assets/background.gif/');
+  /* background-image: url('./assets/background.gif/'); */
   background-size: 100%;
 }
