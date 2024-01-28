@@ -8,12 +8,15 @@ function App() {
 
   return (
     <>
-      <Sidebar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/personal-web/' element={<Home />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
+      <div className='app-container'>
+        <Sidebar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/personal-web/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+        </Routes>
+      </div>
+      
     </>
   )
 }
