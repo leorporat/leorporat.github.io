@@ -11,7 +11,7 @@
 
 .project-container {
   display: flex;
-  margin-bottom: 3vh;
+  margin-bottom: 2vh;
 }
 
 .sidebar_container {
@@ -54,17 +54,6 @@
   text-decoration: none;
 }
 
-@keyframes slide-left {
-  /* use % to specify the animation at different stages (in this case, 0% and 100%) */
-  from {transform: translateX(0);}
-  to {transform: translateX(-10px);}
-}
-
-@keyframes slide-right {
-  /* use % to specify the animation at different stages (in this case, 0% and 100%) */
-  to { transform: translateX(-10px); }
-  from { transform: translateX(0px); }
-}
 
 .link-word {
   
@@ -82,8 +71,15 @@
 .link-word:hover{
   text-decoration: underline dotted;
   color: inherit;
-  animation: slide-left 0.5s ease forwards;
-  
+}
+
+.link-arrow {
+  display: inline-flex;
+  transition: transform 0.25s ease;
+}
+
+.link-word:hover .link-arrow {
+  transform: translate(4px, -4px);
 }
 
 .link-text {
@@ -149,25 +145,19 @@
   }
 }
 
-@keyframes arrow_hover_animation {
-  0% {
-    transform: translate(0px, 0px);
-  }
-  100% {
-    transform: translate(5px, -5px);
-  }
-}
 
 .projects-container {
-  margin-top: 3vh;
+  margin-top: 2vh;
   vertical-align: top;
   margin-left: 5vw;
   width: 55vw;
 }
 
 .project-container {
-  padding-left: 5vh;
-  padding-right: 5vh;
+  padding-left: 1.5vh;
+  padding-right: 1.5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   text-decoration: none;
   color: inherit;
   display: inline-block;
@@ -178,26 +168,30 @@
   border-radius: 10px;
 }
 
-.project-container:hover .project-link-arrow {
-  animation: arrow_hover_animation 0.3s ease forwards;
+.project-container:hover .link-arrow {
+  transform: translate(4px, -4px);
 }
 
 .project-title {
   color: #6DB9FF;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   color: coral;
   margin-right: 0.5vh;
+  margin-bottom: 0.2vh;
 }
 
 .project-description {
   color: #4A4848;
   padding: 0;
   margin: 0;
+  margin-top: 0.3vh;
+  line-height: 1.3;
 }
 
 .project-text {
-  margin-top: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
   text-decoration: none;
 }
 
@@ -214,12 +208,14 @@
 .project-technology-text {
   color: coral;
   background-color: #fff4eb;
-  padding-bottom: 1vh;
-  padding-top: 1vh;
-  padding-left: 1.5vh;
-  padding-right: 1.5vh;
+  padding-bottom: 0.3vh;
+  padding-top: 0.3vh;
+  padding-left: 0.8vh;
+  padding-right: 0.8vh;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 15px;
   display: inline-flex;
-  margin-right: 1vh;
+  margin-right: 0.8vh;
+  margin-bottom: 0.3vh;
+  font-size: 0.9em;
 }

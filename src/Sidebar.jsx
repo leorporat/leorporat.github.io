@@ -15,7 +15,7 @@ function Sidebar() {
         </Link>
         <img id='personal_photo' src={personal_photo} alt='Personal photo did not load'></img>
         <div id='icon_holder'>
-          <a href="mailto:porat2@illinois.edu">
+          <a href="mailto:lrporat@gmail.com">
             <img className='link_icon' id='mail_icon' src={mail}></img>
           </a>
           <a href="http://www.github.com/leorporat" target="_blank">
